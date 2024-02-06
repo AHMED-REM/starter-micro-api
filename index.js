@@ -24,11 +24,11 @@ let student2 = {
 
 keys = Object.keys(student1)
 fkey = keys[0]
-students[fkey] = student1[ftkey]
+students[fkey] = student1[fkey]
 
 keys = Object.keys(student2)
 fkey = keys[0]
-students[fkey] = student2[ftkey]
+students[fkey] = student2[fkey]
 
 students["id3"] = {
     nom : "test3",
@@ -58,7 +58,7 @@ app.post('/addstudent', function (req, res) {
     let student = req.body
     keys = Object.keys(student)
     fkey = keys[0]
-    students[fkey] = student[ftkey]
+    students[fkey] = student[fkey]
     res.status(200).send("student saved successfully !")
 })
 
