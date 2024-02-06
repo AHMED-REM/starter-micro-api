@@ -28,7 +28,7 @@ app.post('/addstudent', function (req, res) {
     let student = req.body
     keys = Object.keys(student)
     fkey = keys[0]
-    students[fkey] = student[fkey]
+    students[fkey] = student[fkey] 
     res.status(200).send("student saved successfully !")
 })
 
